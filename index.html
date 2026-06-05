@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Daily Planner</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="app">
+
+    <header>
+      <h1 id="title">Smart Planner</h1>
+
+      <div class="controls">
+        <button onclick="toggleLang()">🌍 EN/FA</button>
+        <button onclick="toggleTheme()">🌙 Theme</button>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2 id="taskTitle">Today Tasks</h2>
+
+      <div class="input-group">
+        <input id="taskInput" placeholder="Add task..." />
+        <button onclick="addTask()">Add</button>
+      </div>
+
+      <ul id="taskList"></ul>
+    </section>
+
+    <section class="card">
+      <h2>Mood</h2>
+      <select id="mood">
+        <option>🙂 Good</option>
+        <option>😄 Great</option>
+        <option>😐 Neutral</option>
+        <option>😔 Bad</option>
+      </select>
+    </section>
+
+    <section class="card">
+      <h2>Journal</h2>
+      <textarea id="journal" placeholder="Write your thoughts..."></textarea>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
